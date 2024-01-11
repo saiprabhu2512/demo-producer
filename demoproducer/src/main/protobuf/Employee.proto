@@ -1,0 +1,15 @@
+syntax = "proto3";
+package demoproducer;
+
+option java_package = "com.example.producer.proto";
+option java_outer_classname = "EmployeeProducerEvent";
+option java_multiple_files = true;
+
+message Employee {
+ int64  id = 1;
+ string name = 2;
+ double salary = 3;
+ string designation = 4;
+ string gender = 5;
+ string operation = 6;
+}
